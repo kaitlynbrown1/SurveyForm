@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Marvel Movie Survey Form</h1>
+
+    <p id="description">Thank you for taking the time to help us improve the MCU.</p>
+
+  <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name <input id="name" name="name" type="text" placeholder ="Enter your name here ..." required /></label>
+       
+        <label for="email" id="email-label">Email <input id="email" name="email" type="email" placeholder="Enter your email here ..." required /></label>
+       
+        <label for="age" id="number-label">Age (optional) <input id="number" name="age" type="number" placeholder="Enter your age here ..." min="13" max="120"/></label>
+   
+    <label for="currentrole">Please select your current role:
+          <select id="dropdown" name="currentrole">
+            <option value="">(Select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Prefer not to say</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+    </fieldset>
+
+<fieldset>       
+  <legend>Would you recommend the MCU to a friend?</legend>
+        <label for="yes"><input id="yes" type="radio" name="recommend" value="yes" class="inline" checked />Yes</label>
+        <label for="no"><input id="no" type="radio" name="recommend" value="no" class="inline" /> No</label>
+        <label for="notsure"><input id="notsure" type="radio" name="recommend" value="notsure" class="inline" /> Not Sure</label>
+      </fieldset>
+
+<fieldset>
+<label for="favouritephase">Which phase from the MCU is your favourite?
+          <select id="favouritephase" name="favouritephase">
+            <option value="">(Select one)</option>
+            <option value="1">Phase 1 (Iron-Man - The Avengers)</option>
+            <option value="2">Phase 2 (Iron-Man 3 - Ant-Man)</option>
+            <option value="3">Phase 3 (Captain America: Civil War - Spider-Man: Far From Home)</option>
+            <option value="4">Phase 4 (WandaVision - Black Pantha: Wakanda Forever)</option>
+            <option value="5">Phase 5 (Ant-Man and the Wasp: Quantumania - Daredevil: Born Again)</option>
+          </select>
+        </label>
+ 
+        <label for="new">Are there any comics which you would like to be turned into a new film?:
+<textarea id="new" name="new" rows="3" cols="30" placeholder="Enter your comments here ..."></textarea>        </label>
+      </fieldset>
+ 
+<fieldset>       
+  <legend>What platforms have you watched the MCU on? (Tick all that apply)</legend>
+        <label for="cinema"><input id="cinema" type="checkbox" name="platforms" value="cinema" class="inline" checked />Cinema</label>
+        <label for="disney"><input id="disney" type="checkbox" name="platforms" value="disney" class="inline" />Disney +</label>
+        <label for="netflix"><input id="netflix" type="checkbox" name="platforms" class="inline" value="netflix" />Netflix</label>
+        <label for="tv"><input id="tv" type="checkbox" name="platforms" value="tv" class="inline" />TV</label>
+        <label for="dvd"><input id="dvd" type="checkbox" name="platforms" value="dvd" class="inline" />DVD</label>
+      </fieldset>
+
+    <fieldset>
+      <label for="terms-and-conditions">        
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="termsandconditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+      
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
